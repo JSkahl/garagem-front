@@ -15,6 +15,9 @@
             <p>Modelos</p>
             <p>Veículos</p>
         </div>
+        <div class="login">
+            <p>Login</p>
+        </div>
     </div>
 </template>
 
@@ -23,9 +26,10 @@
 .side-bar {
     display: flex;
     flex-direction: column;
-    background-color: aqua;
-    width: 15%;
     height: 100vh;
+    width: 15%;
+    border-radius: 10px;
+    box-shadow: black 3px 10px 12px;
 }
 
 .logo {
@@ -41,8 +45,21 @@ img {
 }
 
 .models {
-    background-color: red;
-    height: 30%;
-    font-size: large;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    margin-left: 4%;
+    height: 100%;
+    font-size: 1.4em;
+}
+
+.models > p {
+    margin-top: 2%;
+}
+
+.login {
+    display: flex;
+    margin-left: 4%;
+    font-size: 1.2em;
 }
 </style>
