@@ -8,7 +8,8 @@
             <p>Garagem</p>
         </div>
         <div class="models">
-            <p>Acessórios</p>
+            <router-link :to="{name: 'home'}"></router-link>
+            <router-link to="/acessorios">Acessórios</router-link>
             <p>Categorias</p>
             <p>Cores</p>
             <p>Marcas</p>
