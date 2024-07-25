@@ -3,8 +3,8 @@ import SideBar from '@/components/SideBar.vue'
 </script>
 
 <template>
+    <RouterView />
     <SideBar />
-    <p>aa</p>
 </template>
 
 <style scoped>
