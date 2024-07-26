@@ -30,15 +30,15 @@ const menuAberto = ref(false);
     </div>
         <div v-if="menuAberto" class="menu">
             <div class="models-mobile">
-            <router-link class="link-mobile" to="/">Home</router-link>
-            <router-link class="link-mobile" to="/acessorios">Acessórios</router-link>
-            <router-link class="link-mobile" to="/categorias">Categorias</router-link>
-            <router-link class="link-mobile" to="/cores">Cores</router-link>
-            <router-link class="link-mobile" to="/modelos">Modelos</router-link>
-            <router-link class="link-mobile" to="/veiculos">Veículos</router-link>
+            <router-link class="link-mobile" to="/" @click="menuAberto = !menuAberto">Home</router-link>
+            <router-link class="link-mobile" to="/acessorios" @click="menuAberto = !menuAberto">Acessórios</router-link>
+            <router-link class="link-mobile" to="/categorias" @click="menuAberto = !menuAberto">Categorias</router-link>
+            <router-link class="link-mobile" to="/cores" @click="menuAberto = !menuAberto">Cores</router-link>
+            <router-link class="link-mobile" to="/modelos" @click="menuAberto = !menuAberto">Modelos</router-link>
+            <router-link class="link-mobile" to="/veiculos" @click="menuAberto = !menuAberto">Veículos</router-link>
         </div>
         <div class="login-mobile">
-            <router-link class="link-mobile" to="/login">Login</router-link>
+            <router-link class="link-mobile" to="/login" @click="menuAberto = !menuAberto">Login</router-link>
         </div>
         </div>
 </template>
