@@ -8,16 +8,15 @@
             <p>Garagem</p>
         </div>
         <div class="models">
-            <router-link :to="{name: 'home'}"></router-link>
-            <router-link to="/acessorios">Acessórios</router-link>
-            <p>Categorias</p>
-            <p>Cores</p>
-            <p>Marcas</p>
-            <p>Modelos</p>
-            <p>Veículos</p>
+            <router-link class="link" to="/">Home</router-link>
+            <router-link class="link" to="/acessorios">Acessórios</router-link>
+            <router-link class="link" to="/categorias">Categorias</router-link>
+            <router-link class="link" to="/cores">Cores</router-link>
+            <router-link class="link" to="/modelos">Modelos</router-link>
+            <router-link class="link" to="/veiculos">Veículos</router-link>
         </div>
         <div class="login">
-            <p>Login</p>
+            <router-link class="link" to="/login">Login</router-link>
         </div>
     </div>
 </template>
@@ -54,13 +53,18 @@ img {
     font-size: 1.4em;
 }
 
-.models > p {
-    margin-top: 2%;
-}
-
 .login {
     display: flex;
     margin-left: 4%;
     font-size: 1.2em;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link:hover {
+    color: rgb(26, 26, 26);
 }
 </style>
