@@ -1,10 +1,16 @@
 <script setup>
-import Header from '@/components/Header.vue'
+import { useMonitor } from '@/composables/monitor.js';
+
+const { menu } = useMonitor();
 </script>
 
 <template>
-    <Header />
-    <router-view />
+    <div>
+        <component :is="menu"/>
+        <main>
+            <router-view /> 
+        </main>
+    </div>
 </template>
 
 <style scoped>
