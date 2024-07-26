@@ -1,8 +1,9 @@
 <script setup>
+
 </script>
 
 <template>
-    <div class="side-bar">
+    <div class="header">
         <div class="logo">
             <img src="/logo.png" alt="Logo">
             <p>Garagem</p>
@@ -23,39 +24,38 @@
 
 <style scoped>
 
-.side-bar {
+.header {
     display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 15%;
+    justify-content: space-between;
+    height: 8vh;
+    width: 100%;
     border-radius: 10px;
     box-shadow: black 3px 10px 12px;
 }
 
 .logo {
     display: flex;
-    align-items: flex-end;
+    width: 15%;
+    align-items: center;
     font-size: 2em;
 }
 
 img {
-    
-    background-color: aliceblue;
     width: 20%;
 }
 
 .models {
     display: flex;
-    flex-direction: column;
-    margin-top: 20%;
-    margin-left: 4%;
-    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
     font-size: 1.4em;
+    width: 35%;
 }
 
 .login {
     display: flex;
-    margin-left: 4%;
+    align-items: center;
     font-size: 1.2em;
 }
 
