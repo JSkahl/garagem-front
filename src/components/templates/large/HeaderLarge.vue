@@ -1,4 +1,8 @@
 <script setup>
+import { PassageUser } from '@passageidentity/passage-elements/passage-user';
+import { useAuthStore } from '@/stores/auth';
+
+const authStore = useAuthStore();
 </script>
 
 <template>
@@ -8,7 +12,7 @@
             <p>Garagem</p>
         </div>
         <div class="models">
-            <router-link class="link" to="/">Home</router-link>
+            <router-link class="link" :to="{ name: 'home' }">Home</router-link>
             <router-link class="link" to="/acessorios">Acessórios</router-link>
             <router-link class="link" to="/categorias">Categorias</router-link>
             <router-link class="link" to="/cores">Cores</router-link>
@@ -16,7 +20,10 @@
             <router-link class="link" to="/veiculos">Veículos</router-link>
         </div>
         <div class="login">
-            <router-link class="link" to="/login">Login</router-link>
+            <div v-if="authStore.loggedIn">
+                <router-link class="link" to="/logout">Logout</router-link>
+            </div>
+            <router-link class="link" v-else to="/login">Login</router-link>
         </div>
     </div>
 </template>
