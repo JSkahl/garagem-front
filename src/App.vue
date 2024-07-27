@@ -2,8 +2,6 @@
 import { useMonitor } from '@/composables/monitor.js';
 
 const { menu } = useMonitor();
-
-import FooterLarge from '@/components/templates/large/FooterLarge.vue'
 </script>
 
 <template>
@@ -12,9 +10,6 @@ import FooterLarge from '@/components/templates/large/FooterLarge.vue'
         <main>
             <router-view /> 
         </main>
-    <footer>
-        <FooterLarge />
-    </footer>
     </div>
 </template>
 
